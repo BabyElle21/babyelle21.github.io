@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BabyElle - Storyteller & Artist</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: #01579b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #01579b;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b2dfdb;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 50px;
+            text-align: justify;
+            margin-bottom: 40px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #01579b;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #01579b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        /* Portfolio List Styles */
+        .portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .portfolio-item {
+            width: calc(33.33% - 20px);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-desc {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-desc {
+            transform: translateY(0);
+        }
+
+        /* Space Before Footer */
+        .space-before-footer {
+            height: 100px;
+        }
+
+        /* Link Styles */
+        a {
+            color: #01579b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #b2dfdb;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BabyElle - Storyteller & Artist</h1>
+    </header>
+
+    <nav>
+        <a href="#storytelling">Storytelling</a>
+        <a href="#portfolio">Art Portfolio</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="storytelling" class="section">
+        <h2>Storytelling</h2>
+        <p>Welcome to the world of storytelling! This is the place for every book lover and fiction enthusiast to enjoy.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Art Portfolio</h2>
+        <div class="portfolio-list">
+            <div class="portfolio-item">
+                <img src="book1.jpg" alt="Book Cover 1" class="portfolio-img">
+                <div class="portfolio-desc">
+                    <p>Brief description of Book 1</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="book2.jpg" alt="Book Cover 2" class="portfolio-img">
+                <div class="portfolio-desc">
+                    <p>Brief description of Book 2</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="book3.jpg" alt="Book Cover 3" class="portfolio-img">
+                <div class="portfolio-desc">
+                    <p>Brief description of Book 3</p>
+                </div>
+            </div>
+            <!-- Add more portfolio items -->
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hey there, everyone! BabyElle here, diving into the world of writing with wide-eyed enthusiasm. As a self-proclaimed amateur, I'm navigating the labyrinth of words, guided by my love for romance-both the sweet and the steamy sides! An unapologetic Libra and an INTP-T, I'll keep my age a mystery for now (a writer's secret!). When I'm not lost in the realms of storytelling, you'll find me immersed in heartwarming K-POP melodies that fuel my creative soul. I have a strange relationship with spicy food-I can't handle it, yet I can't resist it! A freelancer by day, I wield both pen and brush as an illustrator and novelist. Join me on this journey as we explore the wonders of imagination together!
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+            Find me on Wattpad: <a href="https://www.wattpad.com/user/_BabyElle_" target="_blank">_BabyElle_</a>
+        </p>
+    </section>
+
+    <footer>
+        Imagination is our alter world
+    </footer>
+
+</body>
+</html>
